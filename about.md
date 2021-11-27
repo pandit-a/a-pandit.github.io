@@ -1,16 +1,16 @@
 ---
 layout: page
-title: About2
+title: About
 permalink: /about/
 ---
 
-Some information about you!
-Is tthis working?
+Authors: 
+- AS Pandit PhD MRCS
+- A Jalal BSc (Hons)
+- AK Toma MD(Res) FRCS(SN)
+- P Nachev PhD FRCP
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[a.pandit@ucl.ac.uk](mailto:a.pandit@ucl.ac.uk)
