@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Dashboard demonstration
+title: Demo
 permalink: /Demo/
 ---
 
