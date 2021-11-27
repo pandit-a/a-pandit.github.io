@@ -5,9 +5,6 @@ permalink: /Methods/
 ---
 
 Supplementary methods
-
-<details>
-<summary>Summary text.</summary> 
     
 ```python
 #include <stdio.h>
@@ -17,5 +14,3 @@ int main(void) {
     return 0;
 }
 ```
-    
-</details>
