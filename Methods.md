@@ -85,10 +85,32 @@ def transform_to_datetime(df, time_col):
 
 </details>
 
+*Geographical information*
 
+Using the name of the referring site, an application programming interface (API) request is made to *openstreetmap.org* to derive the latitude and longitude of referral site locations. This location data is then cached and parsed to a geographical plotting function.
 
+<details>
+<summary>Code</summary>
 
+{% highlight python %}
+'pandas', 1.2.3
+{% endhighlight %}
 
+</details>
 
+*Implementation of time-series forecasting models*
 
+Three forecasting algorithms were trialled in this work: an automated pipeline which combined Seasonal and Trend decomposition using Loess (STL) with an automatic Autoregressive Integrated Moving Average (Auto-ARIMA) model, a Convolutional Neural Network - Long Short-Term Memory (CNN-LSTM) network and Prophet. In this section we describe how each model was implemented.
 
+In preparation for time-series analysis, the referral volumes were sorted into weekly brackets, rather than taking daily volumes. This was to compensate for an observed ‘weekend’ effect seen in the daily referral data (see Figure 5A, Supplementary Table 1). 
+
+__S Table 1__. 
+Median weekday and weekend volumes. Four highest referring categories are shown. p values shown are Bonferroni multiple comparison corrected following univariate Mann-Whitney U tests. (NS = not significant)
+
+| Diagnostic Classification | Median weekday volume | Median weekend volume | p |
+|---|---|---|---|
+| All | 34.0 | 17.5 | <0.0001 |
+| Brain tumour | 6.8 | 3.5 | <0.0001 |
+| Degenerative spine | 4.6 | 2.0 | <0.0001 |
+| Neurovascular | 2.4 | 2.0 | 0.06 |
+| Stroke | 2.2 | 2.0 | NS |
