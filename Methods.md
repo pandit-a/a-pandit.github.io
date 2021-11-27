@@ -4,12 +4,12 @@ title: Supplementary Methods
 permalink: /Methods/
 ---
 
-Supp methods
+Supplementary methods
 
 <details>
-<summary>Summary text.</summary>
+<summary>Summary text.</summary> 
     
-```c
+```python
 #include <stdio.h>
 
 int main(void) {
@@ -17,6 +17,5 @@ int main(void) {
     return 0;
 }
 ```
-
     
 </details>
