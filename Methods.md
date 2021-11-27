@@ -10,13 +10,15 @@ __Supplementary methods__
 
 The following dependencies were used in the creation of this dashboard (see code snippet below)
 
-
 <details>
   <summary>CODE</summary>
   
-  ```javascript
-    function logSometing(something) {
-      console.log(`Logging: ${something}`);
-    }
+  ```
+    test
   ```
 </details>
+
+```
+  test
+```
+
