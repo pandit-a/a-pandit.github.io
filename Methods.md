@@ -10,15 +10,24 @@ __Supplementary methods__
 
 The following dependencies were used in the creation of this dashboard (see code snippet below)
 
-<details>
-  <summary>CODE</summary>
-  
-  ```
-    test
-  ```
-</details>
 
-```
-  test
-```
+<!-- Start Collapse.html -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = document.getElementById(this.id+"data");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<!-- End Collapse.html -->
+
+
 
