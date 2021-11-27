@@ -9,9 +9,8 @@ Supp methods
 <details>
 <summary>Summary text.</summary>
 <code style="white-space:nowrap;">Hello World, how is it going?</code>
-</details>
-
-```c
+    
+    ```c
 #include <stdio.h>
 
 int main(void) {
@@ -19,3 +18,7 @@ int main(void) {
     return 0;
 }
 ```
+
+    
+</details>
+
