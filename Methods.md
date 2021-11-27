@@ -11,13 +11,15 @@ __Supplementary methods__
 The following dependencies were used in the creation of this dashboard (see code snippet below)
 
 <details>
-<summary>CODE</summary>
+<summary>Preview</summary>
 
-{% highlight python %}
-puts 'Expanded message'
-{% endhighlight %}
-
-</details>
+<figure class="highlight">
+    <pre>
+        <code class="language-ruby" data-lang="ruby">
+        <span class="nb">puts</span> <span class="s1">'Expanded message'</span>
+        </code>
+    </pre>
+</figure>
 
 *Data pre-processing*
 
