@@ -4,11 +4,15 @@ title: Supplementary Methods
 permalink: /Methods/
 ---
 
-Supplementary methods
-    
+__Supplementary methods__
+
+*Python libraries and dependencies*
+
+The following dependencies were used in the creation of this dashboard (see code snippet below)
+
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>CODE</summary>
   
   ```javascript
     function logSometing(something) {
