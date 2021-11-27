@@ -6,11 +6,9 @@ permalink: /Methods/
 
 Supplementary methods
     
-```python
-#include <stdio.h>
 
-int main(void) {
-    printf("Hello World!\n");
-    return 0;
-}
-```
+<button class="collapsible" id="yaml">Click here for the code.</button>
+
+<div class="content" id="yamldata" markdown="1">
+  CONTENT
+</div>
