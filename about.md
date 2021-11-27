@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About aegagava
-permalink: /about/
+title: About
+permalink: /about2/
 ---
 
 Some information about you!
