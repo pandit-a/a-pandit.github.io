@@ -7,8 +7,12 @@ permalink: /Methods/
 Supplementary methods
     
 
-<button class="collapsible" id="yaml">Click here for the code.</button>
-
-<div class="content" id="yamldata" markdown="1">
-  CONTENT
-</div>
+<details>
+  <summary>Click to expand!</summary>
+  
+  ```javascript
+    function logSometing(something) {
+      console.log(`Logging: ${something}`);
+    }
+  ```
+</details>
