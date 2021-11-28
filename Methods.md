@@ -11,7 +11,7 @@ __Supplementary methods__
 The following dependencies were used in the creation of this dashboard (see code snippet below)
 
 <details>
-<summary>__code__</summary>
+<summary><code></summary>
 
 {% highlight python %}
 'pandas', 1.2.3
