@@ -4,10 +4,37 @@ title: Supplementary Results
 permalink: /Results/
 ---
 
-Supplementary Results
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
+__Supplementary Figure 2. Out-of-sample one-year referral projections using all three forecasting algorithms trained on all available data.__
 ![Projection](https://user-images.githubusercontent.com/80597524/143724279-6f053213-784e-4cd1-9728-d2137acdad9f.png)
+
+*User experience and implementation*
+
+Analysis of coded user feedback explores possible reasons why the dashboard scored well (Supplementary Table X). Many users highlighted the ‘clarity’, ‘usefulness’ and ‘variety’ of graphs and figures [M1, C3, C4, R1, R6, R7, R10, R12]. Others commented on dashboard interactivity [R6, R8], in particular the use of drill-down features as being particularly positive. Some users found that the dashboard would help with auditing and research. In particular they found that it gave important insights ‘into previously inaccessible big-data’ [R1], that it highlighted ‘areas of improvement for staff allocation’ [C3], suggested ‘directions for more focused audit and research’ [C5] and that it demonstrated ‘why we need to liaise with local referring sites’ [R3]. A few users commented on the AI implementation and time-series forecasting functions stating that it would be ‘useful in anticipating demand’ [R1], and that it ‘could be implemented easily’ [R8] but ‘unsure how it would be applied day-to-day’ [R12]. Some users did express concerns about dashboard access in the department [C1, C2],  whereas others thought there should be additional functionality to ‘export data’ or review it in more detail [R2,R11].
+
+__S Table 2. User feedback and individual responses.__ Coded for qualitative analysis.
+
+| __Role                          | Code | Which aspects or features of the dashboard did you find most useful? (Italics = verbal feedback during think-aloud protocol)                      | Do you have any suggestions for improving the dashboard? (Italics = verbal feedback during think-aloud protocol)__ |
+|-------------------------------|------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Management and Administration | M1   | Useful graphs, gives important insights into acute neurosurgical data                                                                             | /                                                                                                                |
+| Management and Administration | M2   | Will be useful in helping understand acute patient flow such as for MSCC (Metastatic spinal cord compression)                                     | /                                                                                                                |
+| Management and Administration | M3   | More audit work should be done like this. Easy to use                                                                                             | /                                                                                                                |
+| Neurosurgery Consultant       | C1   | Will be very useful to understand the [acute neurosurgical] service                                                                               | Need to know when it can be accessed by whole department                                                         |
+| Neurosurgery Consultant       | C2   | Comprehensive. [Time-series] is interesting. Very useful                                                                                          | Needs better access                                                                                              |
+| Neurosurgery Consultant       | C3   | Heatmaps highlight areas of improvement for staff allocation/resources. Will help make on-call burden easier                                      |                                                                                                                  |
+| Neurosurgery Consultant       | C4   | Beautiful figures                                                                                                                                 | No                                                                                                               |
+| Neurosurgery Consultant       | C5   | Useful at suggesting directions for more focused audit and research                                                                               | /                                                                                                                |
+| Neurosurgery Registrar        | R1   | Useful figures, can give insight into previously inaccessible big data. Forecasting will be useful at anticipating demand                         | /                                                                                                                |
+| Neurosurgery Registrar        | R2   | Really useful                                                                                                                                     | More granular outcome data needs to be available                                                                 |
+| Neurosurgery Registrar        | R3   | Shows why we need to liaise with local referring sites [in reference to geospatial figure]                                                        | /                                                                                                                |
+| Neurosurgery Registrar        | R4   |                                                                                                                                                   | /                                                                                                                |
+| Neurosurgery Registrar        | R5   |                                                                                                                                                   | /                                                                                                                |
+| Neurosurgery Registrar        | R6   | Nice varied visuals and interaction                                                                                                               | /                                                                                                                |
+| Neurosurgery Registrar        | R7   | Very clear figures                                                                                                                                | /                                                                                                                |
+| Neurosurgery Registrar        | R8   | Instant drill-down and interactivity. 'Cool' that AI could be implemented so easily [in reference to forecasting]                                 | Some functionality (date/time changers) was a bit slow                                                           |
+| Neurosurgery Registrar        | R9   | [in reference to geospatial figure] could help improve in determining which sites send poor referrals and how patient transfers could be improved | /                                                                                                                |
+| Neurosurgery Registrar        | R10  | Nice graphs                                                                                                                                       | Pending information is ambiguous                                                                                 |
+| Neurosurgery Registrar        | R11  | Excellent dashboard!                                                                                                                              | Needs ability to download or export data                                                                         |
+| Neurosurgery Registrar        | R12  | Highly visual. You get a good idea of where referrals are coming from. Saves time in looking at spreadsheets                                      | Unsure where the AI will be used on a day to day level                                                           |
+{:.mbtablestyle}
+
