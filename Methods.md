@@ -199,13 +199,13 @@ In preparation for time-series analysis, the referral volumes were sorted into w
 __S Table 1__
 Median weekday and weekend volumes. Four highest referring categories are shown. p values shown are Bonferroni multiple comparison corrected following univariate Mann-Whitney U tests (NS = not significant).
 
-| Diagnostic Classification | Median weekday volume | Median weekend volume | p |
-|---|---|---|---|
-| All | 34.0 | 17.5 | <0.0001 |
-| Brain tumour | 6.8 | 3.5 | <0.0001 |
-| Degenerative spine | 4.6 | 2.0 | <0.0001 |
-| Neurovascular | 2.4 | 2.0 | 0.06 |
-| Stroke | 2.2 | 2.0 | NS |
+| Diagnostic Classification | Median weekday volume | Median weekend volume | p       |
+|---------------------------|-----------------------|-----------------------|---------|
+| All                       | 34.0                  | 17.5                  | <0.0001 |
+| Brain tumour              | 6.8                   | 3.5                   | <0.0001 |
+| Degenerative spine        | 4.6                   | 2.0                   | <0.0001 |
+| Neurovascular             | 2.4                   | 2.0                   | 0.06    |
+| Stroke                    | 2.2                   | 2.0                   | NS      |
 
 We performed an exploratory analysis of the time-series using auto-correlation and partial auto-correlation plots in combination with augmented Dickey-Fuller testing to determine the degree of stationarity in the data and assist in defining initial parameters for seasonal decomposition and upper and lower limits for the auto-ARIMA grid search.
 ARIMA models are often considered a benchmark model in fields such as econometrics (Box / Jenkins). Here, two adjustments were made to enable automatic hyperparameter tuning and make the model robust to time-series of uncertain length, frame and degree of seasonality. First, a Seasonal and Trend decomposition using Loess (STL) was applied which separates the raw data into seasonal, trend and residual components. Each component is fed into an automated grid search to determine p, d and q parameters which describe the lag order, degree of differencing and order of moving average respectively. Optimal parameters are determined by minimisation of the Akaike Information Criterion (AIC) from the grid search and are used to fit the model. In this way if the seasonal and trend decomposition fails to enforce stationarity in the trend data (if for example there are multiple layers of seasonality), the auto-ARIMA step can separately model the trend, seasonality and residual before recomposing the data to forecast.
@@ -404,3 +404,11 @@ forecast = model.predict(future)
 {% endhighlight %}
 
 </details>
+
+*Usability, acceptability and feasibility*
+
+This study employed a mixed-method design to assess dashboard usability, acceptability and feasibility. Participants were recruited from the local neurosurgical centre through mailing lists and were included if they had an adequate experience of using the electronic referral system (> 6 months). Participants were excluded if they were aware of the development of the dashboard. 
+
+In each testing session, a demonstration of the dashboard’s capabilities were shown (~ 10-minutes). As an example which would simulate a typical service evaluation, participants were shown how to use features to audit a particular diagnostic category or time-period. Using a think-aloud protocol, participants were invited to explore the functions of the dashboard independently, after which they completed an electronic questionnaire that incorporated three validated instruments: the System Usability Scale (SUS), Acceptability of Intervention Measure (AIM) and Feasibility of Intervention Measure (FIM) adapted for use. The SUS asks participants to respond to a set of 10 statements using a 5 point Likert scale, with a composite score above 70 defined as “good” usability. 
+
+In each of the AIM and FIM scales, participants were presented with 4 statements in reference to the ‘intervention’ (dashboard) and asked to rate these according to a 5-point Likert Scale. These statements have been previously assessed for substantive and discriminant content validity (Weiner). Two white-box questions were also incorporated into the questionnaire: “Which aspects or features of the dashboard did you find useful?” and “Do you have any suggestions for improving the dashboard?”. The questionnaire has been outlined in full in the Supplementary Appendix.
