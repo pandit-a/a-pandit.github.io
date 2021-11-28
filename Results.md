@@ -14,7 +14,7 @@ Analysis of coded user feedback explores possible reasons why the dashboard scor
 
 __S Table 2. User feedback and individual responses.__ Coded for qualitative analysis.
 
-| __Role                          | Code | Which aspects or features of the dashboard did you find most useful? (Italics = verbal feedback during think-aloud protocol)                      | Do you have any suggestions for improving the dashboard? (Italics = verbal feedback during think-aloud protocol)__ |
+| __Role__                          | __Code__ | __Which aspects or features of the dashboard did you find most useful? (Italics = verbal feedback during think-aloud protocol)__                      | __Do you have any suggestions for improving the dashboard? (Italics = verbal feedback during think-aloud protocol)__ |
 |-------------------------------|------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Management and Administration | M1   | Useful graphs, gives important insights into acute neurosurgical data                                                                             | /                                                                                                                |
 | Management and Administration | M2   | Will be useful in helping understand acute patient flow such as for MSCC (Metastatic spinal cord compression)                                     | /                                                                                                                |
