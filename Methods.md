@@ -11,7 +11,7 @@ __Supplementary methods__
 The following dependencies were used in the creation of this dashboard (see code snippet below)
 
 <details>
-<summary><code></summary>
+<summary>[code]</summary>
 
 {% highlight python %}
 'pandas', 1.2.3
@@ -36,7 +36,7 @@ The following dependencies were used in the creation of this dashboard (see code
 Following anonymisation, referral data was uploaded as a pandas dataframe. Redundant columns, duplicates and erroneous entries were removed and all dates and times were transformed to python date-time data-types for further manipulation. Specialist working diagnoses are designated by the on-call neurosurgical registrar when receiving the referral and include a total of 138 different options. The diagnosis is based on the information received at the point of the referral and may be modified as further information is shared or after senior review. Specialist diagnoses were aggregated into 13 primary diagnostic categories: brain tumour, cauda equina syndrome, congenital, subdural haematoma, cranial trauma, degenerative spine, hydrocephalus, infection, spinal trauma, stroke, neurovascular and ‘not neurosurgical’ (Supplementary Appendix). 
 
 <details>
-<summary>CODE</summary>
+<summary>[code]</summary>
 
 {% highlight python %}
 #Upload anonymised file - either saved as .csv or .pkl
@@ -90,7 +90,7 @@ def transform_to_datetime(df, time_col):
 Using the name of the referring site, an application programming interface (API) request is made to *openstreetmap.org* to derive the latitude and longitude of referral site locations. This location data is then cached and parsed to a geographical plotting function.
 
 <details>
-<summary>CODE</summary>
+<summary>[code]</summary>
 
 {% highlight python %}
 ##API REQUEST TO GENERATE LATITUDE AND LONGITUDE CO-ORDINATES
@@ -213,7 +213,7 @@ We performed an exploratory analysis of the time-series using auto-correlation a
 ARIMA models are often considered a benchmark model in fields such as econometrics (Box / Jenkins). Here, two adjustments were made to enable automatic hyperparameter tuning and make the model robust to time-series of uncertain length, frame and degree of seasonality. First, a Seasonal and Trend decomposition using Loess (STL) was applied which separates the raw data into seasonal, trend and residual components. Each component is fed into an automated grid search to determine p, d and q parameters which describe the lag order, degree of differencing and order of moving average respectively. Optimal parameters are determined by minimisation of the Akaike Information Criterion (AIC) from the grid search and are used to fit the model. In this way if the seasonal and trend decomposition fails to enforce stationarity in the trend data (if for example there are multiple layers of seasonality), the auto-ARIMA step can separately model the trend, seasonality and residual before recomposing the data to forecast.
 
 <details>
-<summary>CODE</summary>
+<summary>[code]</summary>
 
 {% highlight python %}
 ### STL/Auto-ARIMA model
@@ -287,7 +287,7 @@ Deep learning methods such as CNN and LSTM neural networks are able to discover 
 We split the time-series into subsequences with 52 “steps” (i.e. one year) as the input and one output. This is then split into two sub-samples, each with two targets. This is passed into the convolutional layer which transforms the subsamples before downsampling, flattening and passing to a single LSTM layer with 64 neurons. Dropout proportion was set to 30%, in order to reduce overfitting. The number of filters in the convolutional layer, neurons and dropout proportion were selected following a hyperparameter grid search. For out-of-sample predictions longer than one week, the predicted value was used to iteratively increase the training set and the test set is therefore progressively used to fit the model.
 
 <details>
-<summary>CODE</summary>
+<summary>[code]</summary>
 
 {% highlight python %}
 ###CNN-LSTM implementation
@@ -366,7 +366,7 @@ def sequence_split(sequence, n_steps):
 Prophet is an open-source library provided by Facebook (https://facebook.github.io/prophet/). Prophet decomposes a time series into four components: growth, yearly and weekly seasonality and holidays, then fits an additive regression model [Taylor and Letham].  Growth is modelled as a piecewise linear or logistic growth trend, yearly seasonality is modelled using Fourier series, weekly seasonality is modelled using dummy variables, and holidays are inputted by the user. When modelling, Prophet automatically detects ‘changepoints’ in the trend. In applying this model, we performed a grid search hyperparameter tuning to identify the changepoint and seasonality prior scale and specified the lockdown period as a custom ‘holiday’.
 
 <details>
-<summary>CODE</summary>
+<summary>[code]</summary>
 
 {% highlight python %}
 ### Prophet implementation
