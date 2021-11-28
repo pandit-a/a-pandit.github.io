@@ -104,8 +104,8 @@ Three forecasting algorithms were trialled in this work: an automated pipeline w
 
 In preparation for time-series analysis, the referral volumes were sorted into weekly brackets, rather than taking daily volumes. This was to compensate for an observed ‘weekend’ effect seen in the daily referral data (see Figure 5A, Supplementary Table 1). 
 
-__S Table 1__. 
-Median weekday and weekend volumes. Four highest referring categories are shown. p values shown are Bonferroni multiple comparison corrected following univariate Mann-Whitney U tests. (NS = not significant)
+__S Table 1__
+Median weekday and weekend volumes. Four highest referring categories are shown. p values shown are Bonferroni multiple comparison corrected following univariate Mann-Whitney U tests (NS = not significant).
 
 | Diagnostic Classification | Median weekday volume | Median weekend volume | p |
 |---|---|---|---|
