@@ -196,8 +196,8 @@ Three forecasting algorithms were trialled in this work: an automated pipeline w
 
 In preparation for time-series analysis, the referral volumes were sorted into weekly brackets, rather than taking daily volumes. This was to compensate for an observed ‘weekend’ effect seen in the daily referral data (see Figure 5A, Supplementary Table 1). 
 
-__S Table 1__
-Median weekday and weekend volumes. Four highest referring categories are shown. p values shown are Bonferroni multiple comparison corrected following univariate Mann-Whitney U tests (NS = not significant).
+__S Table 1 Median weekday and weekend volumes__ 
+  Four highest referring categories are shown. p values shown are Bonferroni multiple comparison corrected following univariate Mann-Whitney U tests (NS = not significant).
 
 | Diagnostic Classification | Median weekday volume | Median weekend volume | p       |
 |---------------------------|-----------------------|-----------------------|---------|
@@ -208,6 +208,7 @@ Median weekday and weekend volumes. Four highest referring categories are shown.
 | Stroke                    | 2.2                   | 2.0                   | NS      |
 
 We performed an exploratory analysis of the time-series using auto-correlation and partial auto-correlation plots in combination with augmented Dickey-Fuller testing to determine the degree of stationarity in the data and assist in defining initial parameters for seasonal decomposition and upper and lower limits for the auto-ARIMA grid search.
+                                                                                      
 ARIMA models are often considered a benchmark model in fields such as econometrics (Box / Jenkins). Here, two adjustments were made to enable automatic hyperparameter tuning and make the model robust to time-series of uncertain length, frame and degree of seasonality. First, a Seasonal and Trend decomposition using Loess (STL) was applied which separates the raw data into seasonal, trend and residual components. Each component is fed into an automated grid search to determine p, d and q parameters which describe the lag order, degree of differencing and order of moving average respectively. Optimal parameters are determined by minimisation of the Akaike Information Criterion (AIC) from the grid search and are used to fit the model. In this way if the seasonal and trend decomposition fails to enforce stationarity in the trend data (if for example there are multiple layers of seasonality), the auto-ARIMA step can separately model the trend, seasonality and residual before recomposing the data to forecast.
 
 <details>
