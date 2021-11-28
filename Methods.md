@@ -199,7 +199,7 @@ In preparation for time-series analysis, the referral volumes were sorted into w
 __S Table 1 Median weekday and weekend volumes__ 
   Four highest referring categories are shown. p values shown are Bonferroni multiple comparison corrected following univariate Mann-Whitney U tests (NS = not significant).
 
-| Diagnostic Classification | Median weekday volume | Median weekend volume | p       |
+| __Diagnostic Classification__ | __Median weekday volume__ | __Median weekend volume__ | __p__       |
 |---------------------------|-----------------------|-----------------------|---------|
 | All                       | 34.0                  | 17.5                  | <0.0001 |
 | Brain tumour              | 6.8                   | 3.5                   | <0.0001 |
